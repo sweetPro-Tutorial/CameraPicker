@@ -71,6 +71,7 @@ class MainActivity : AppCompatActivity() {
         Snackbar.make(binding.root, "content uri=${publicUri}", Snackbar.LENGTH_SHORT).show()
         makeCopycat(photoFile!!, publicUri!!)
         photoFile!!.delete()
+        photoFile = null
     }
 
     private fun loadImageFromPublic() {
