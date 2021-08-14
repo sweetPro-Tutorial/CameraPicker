@@ -1,4 +1,4 @@
 <resources>
-    <string name="app_name">ImagePicker</string>
+    <string name="app_name">PhotoPicker</string>
     <string name="permissions_request">If you deny a permission, app functionality is restricted.</string>
 </resources>

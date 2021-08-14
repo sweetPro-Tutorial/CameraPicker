@@ -10,7 +10,6 @@ import android.os.Bundle
 import android.os.Environment
 import android.provider.MediaStore
 import android.util.Log
-import android.view.View
 import androidx.activity.result.contract.ActivityResultContracts
 import androidx.core.content.FileProvider
 import com.google.android.material.snackbar.Snackbar
@@ -33,12 +32,12 @@ class MainActivity : AppCompatActivity() {
         resultLauncherForPermission.launch(neededRuntimePermissions)
 
         // handle actions
-        binding.callCameraButton.setOnClickListener { openCameraAppToPick() }
+        binding.callCameraButton.setOnClickListener { openCameraAppToPickPhoto() }
         binding.savePublicButton.setOnClickListener { saveImageToPublic() }
         binding.loadPublicButton.setOnClickListener { loadImageFromPublic() }
     }
 
-    private fun openCameraAppToPick() {
+    private fun openCameraAppToPickPhoto() {
         val view = binding.root
         // prepare a file for saving the captured photo.
         photoFile = prepareEmptyPhotoFile("photo.jpg")
