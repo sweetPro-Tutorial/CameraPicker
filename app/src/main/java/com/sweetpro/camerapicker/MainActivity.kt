@@ -93,7 +93,7 @@ class MainActivity : AppCompatActivity() {
     }
 
     // region:- Activity Result Handler
-    // to handle the result value(ok or cancel) after camera app is finished.
+    //  to handle the result value(ok or cancel) after camera app is finished.
     private val resultLauncherForCameraResult =
         registerForActivityResult(ActivityResultContracts.StartActivityForResult()) { result ->
             if (result.resultCode == Activity.RESULT_OK) {
